@@ -1,0 +1,198 @@
+<DOCTYPE! html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>&ltThe Basics of HTML&gt</h1> 
+    <main id="main-doc">
+
+    <!--NAV BAR-->
+
+      <nav class="navbar" id="navbar">
+        <header class="nav-header">Sections Within This Document</header><hr>
+        <ul>
+          <li><a class="nav-link" href="#what_is_html?">What is HTML?</a></li>
+          <li><a class="nav-link" href="#introduction_to_html_tags">Introduction to HTML Tags</a></li>
+          <li><a class="nav-link" href="#foundational_html_tags">Foundational HTML Tags</a></li>
+          <li><a class="nav-link" href="#basic_html_structure">Basic HTML Structure</a></li>
+          <li><a class="nav-link" href="#text_formatting_tags">Text Formatting Tags</a></li>
+          <li><a class="nav-link" href="#section_division_tags">Section Division Tags</a></li>
+          <li><a class="nav-link" href="#list_tags">List Tags</a></li>
+          <li><a class="nav-link" href="#form_tags">Form Tags</a></li>
+          <li><a class="nav-link" href="#miscellaneous_tags">Miscellaneous Tags</a></li>
+        </ul>
+      </nav><br>
+
+      <!--WHAT IS HTML-->
+
+      <section class="main-section" id="what_is_html?">
+        <header>What is HTML?</header>
+        <p>HTML is short for "HyperText Markup Language." All that means is that it's a language for describing webpages using ordinary text. Every website you've ever visited is an HTML file, or a series of HTML files linked together.</p> 
+      </section>
+
+      <!--INTRO TO HTML TAGS-->
+
+      <section class="main-section" id="introduction_to_html_tags">
+        <header>Introduction to HTML Tags</header>
+        <p>HTML Tags are the keywords that define how a web page must display and structure its content. Most tags will have an opening and closing tag. An opening tag is a keyword displayed inside of <>brackets (i.e. &ltkeyword&gt), and a closing tag is the same tag but with a forward slash in the front (i.e. &lt/keyword&gt.</p>
+        <p>Note: There are some tags that are self-closing, meaning that the addition of a closing tag is not necessary.</p> 
+      </section>
+
+      <!--COMMON HTML TAGS-->
+
+      <section class="main-section" id="foundational_html_tags">
+        <header>Foundational HTML Tags</header>
+        <p>These tags appear in every HTML document and are the core building blocks of all webpages:</p>
+          <div>
+            <dl>
+              <dt><code>&lthtml&gt</code></li>
+                <dd>This is a container tag that holds all other elements within the HTML.</dd>
+              <dt><code>&lthead&gt</code></dt>
+                <dd>This tag contains the HTML's metadata and defines the document title, character style, and scripts.</dd> 
+              <dt><code>&lttitle&gt</code></dt>
+                <dd>This tag defines the title displayed on the browser's title bar.</dd>
+              <dt><code>&ltbody&gt</code></dt>
+                <dd>This is a container tag that stores all the content within and HTML document.</dd>
+            </dl>
+          </div>
+      </section>
+
+      <!--BASIC HTML STRUCTURE-->
+
+      <section class="main-section" id="basic_html_structure">
+        <header>Basic HTML Structure</header>
+        <p>Now that we know the foundational HTML tags, the basic outline of an HTML webpage is as follows:</p>
+        <div>
+          <code>
+            &lthtml&gt <br>
+            &lthead&gt <br>
+            &lttitle&gt Website Title &lt/title&gt <br>
+            &lt/head&gt <br>
+            &ltbody&gt <br>
+            Website Content <br>
+            &lt/body&gt <br>
+            &lt/html&gt <br>
+          </code>
+        </div><br>
+        </section>
+
+        <!--TEXT FORMAT TAGS-->
+        
+      <section class="main-section" id="text_formatting_tags">
+        <header>Text Formatting Tags</header>
+        <p>These tags help structure and organize text so that it is easier to read, and helps emphasize categories, section, or keywords.</p>
+        <div>
+          <dl>
+            <dt><code>&lth!&gt</code></dt>
+              <dd>This is a header tag that helps section off and organize text. The "!" should be changed to numbers 1 through 6 to determine how large or small the header should be (1=largest, 6=smallest); e.g. "h3".</dd>
+              <dt><code>&ltp&gt</code></dt>
+              <dd>This tag defines a paragraph of text.</dd>
+            <dt><code>&ltb&gt</code></dt>
+              <dd>This tag bolds the text.</dd>
+            <dt><code>&lti&gt</code></dt>
+              <dd>This tag italicizes the text.</dd>
+            <dt><code>&ltu&gt or &ltem&gt</code></dt>
+              <dd>This tag underlines the text.</dd>
+            <dt><code>&ltblockquote&gt</code></dt>
+              <dd>This tag places a text block quote.</dd>
+        </div> 
+      </section>
+
+      <!--SECTION DIVISION TAGS-->
+
+      <section class="main-section" id="section_division_tags">
+        <header>Section Division Tags</header>
+        <p>These tags are additional tools to help organize the text into sections and divisions.</p>
+          <div>
+            <dt><code>&ltdiv&gt</code></dt>
+              <dd>This is a block-level container tag that defines a division or section</dd>
+            <dt><code>&ltspan&gt</code></dt>
+              <dd>This is an inline container used to mark up the text within a document.</dd>
+            <dt><code>&ltbr&gt</code></dt>
+              <dd>This tag inserts a line break.</dd>
+            <dt><code>&lthr&gt</code></dt>
+              <dd>This tag inserts a horizontal line.</dd>
+          </div>
+      </section><br>
+
+      <!--LIST TAGS-->
+
+      <section class="main-section" id="list_tags">
+        <header>List Tags</header>
+        <p>These tags are used to create lists of items that stand out and are easy to read.</p>
+          <div>
+            <dt><code>&ltol&gt</code></dt>
+              <dd>This is an ordered list tag and it's used to list items in a specific sequence.</dd>
+                <ul>
+                  <li><code>&ltol type="A"&gt</code></li>
+                  <li><code>&ltol type="a"&gt</code></li>
+                  <li><code>&ltol type="1"&gt</code></li>
+                  <li><code>&ltol type="i"&gt</code></li>
+                  <li><code>&ltol type="I"&gt</code></li>
+                </ul>
+            <dt><code>&ltul&gt</code></dt>
+              <dd>This is an unordered list tag and it's used to list items in no particular sequence. Are automatically applied as bullet points, but can be further specified with the following "type" attributes:</dd>
+                <ul>
+                  <li><code>&ltul type="disc"&gt</code></li>
+                  <li><code>&ltul type="circle"&gt</code></li>
+                  <li><code>&ltul type="square"&gt</code></li>
+                </ul>
+            <dt><code>&ltli&gt</code></dt>
+              <dd>These are the listed items in either an ordered or unordered list.</dd>
+            <dt><code>&ltdl&gt</code></dt>
+              <dd>This is a container tag for a definition list.</dd>
+            <dt><code>&ltdt&gt</code></dt>
+              <dd>This tag contains the term or phrase being defined.</dd>
+              <dt><code>&ltdd&gt</code></dt>
+              <dd>This tag contains a definition for a term or phrase.</dd>
+      </section><br>
+
+      <!--FORM TAGS-->
+
+      <section class="main-section" id="form_tags">
+        <header>Form Tags</header>
+        <p>These tags insert a form for user input.</p>
+          <div>
+            <dt><code>&ltform&gt</code></dt>
+              <dd>This tag groups various inputs into a form and determines where the information will go.</dd>
+            <dt><code>&ltinput&gt</code></dt>
+              <dd>This tag is interactable and comes in many different forms:</dd>
+                <ul>
+                  <li>Text</li>
+                  <li>Password</li>
+                  <li>Checkbox</li>
+                  <li>Submit</li>
+                  <li>Name</li>
+                  <li>Value</li>
+                </ul>
+            <dt><code>&ltselect&gt</code></dt>
+              <dd>This tag creates a dropdown menu for item selection.
+              </dd>
+             <dt><code>&lttextarea&gt</code></dt>
+              <dd>This tag creates a box for the user to write comments or responses.</dd>
+          </div>
+      </section><br>
+
+      <!--MISC TAGS-->
+
+      <section class="main-section" id="miscellaneous_tags">
+        <header>Miscellaneous Tags</header>
+        <p>Here is a list of other frequently used HTML tags</p>
+          <div>
+            <dt><code>&ltimg src="url" alt="text"&gt</code></dt>
+              <dd>This tag inserts an image into the HTML document. The "src" attribute retrieves the image from a URL to display. The "alt" attribute will display alternative text of your choosing if the image fails to load.</dd>
+            <dt><code>&lta href="url"&gt</code></dt>
+              <dd>This tag serves as a basic link to another webpage as indicated by the "href" attribute.</dd>
+            <dt><code>&lt!--...--&gt</code></dt>
+              <dd>This tag is used to make comments within the HTML source code.</dd>
+            <dt><code>&ltmeta&gt</code></dt>
+              <dd>This tag defines the information about the data within an HTML document. It is used by internet browsers to determine how to display content and by search engines to find specific keywords.</dd>
+          </div>
+      </section><br>
+    </main>
+  </body>
+</html>
